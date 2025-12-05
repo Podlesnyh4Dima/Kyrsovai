@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG Maker — Вход</title>
+    
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="auth.css"> 
+    
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+</head>
+<body class="login-page">
+    <header>
+    <h1 id="top">Моя RPG Maker игра</h1>
+    
+    <nav class="desktop-nav">
+        <a href="index.html">Главная</a>
+        <a href="plugins.html">Плагины</a>
+        <a href="gallery.html">Галерея</a>
+        <a href="login.html">Войти</a>
+        <a href="register.html">Зарегистрироваться</a>
+    </nav>
+    
+    <div class="menu-container">
+        <div class="menu-icon" aria-label="Открыть меню" role="button" tabindex="0">
+            <span></span>
+        </div>
+        <nav class="mobile-nav" aria-label="Мобильное меню">
+                <a href="login.html">Войти</a>
+                <a href="register.html">Зарегистрироваться</a>
+                <a href="index.html">Главная</a>
+                <a href="plugins.html">Плагины</a>
+                <a href="gallery.html">Галерея</a>
+        </nav>
+        <div class="overlay"></div>
+    </div>
+</header>
+
+<div class="login-container">
+    <div class="snowflake">❄️</div>
+    <div class="snowflake">❄️</div>
+    <div class="snowflake">❄️</div>
+    <div class="snowflake">❄️</div>
+    <div class="snowflake">❄️</div>
+    <main class="login-main">
+        <section id="form-demo">
+            <h2>Вход в аккаунт</h2>
+            <form id="login-form" class="auth-form">
+                <div class="input-group">
+                    <label for="login-input">Имя пользователя или Email:</label>
+                    <input type="text" id="login-input" name="login" required>
+                </div>
+                <div class="input-group">
+                    <label for="password-input">Пароль:</label>
+                    <input type="password" id="password-input" name="password" required>
+                </div>
+                <div class="message-area" id="login-message"></div>
+                <button type="submit" class="button">Войти</button>
+            </form>
+            <p>Еще нет аккаунта? <a href="register.html">Зарегистрироваться</a></p>
+        </section>
+    </main>
+</div>
+
+    <footer id="contacts">
+        <div class="footer-grid">
+            <div class="footer-section">
+                <h3>О проекте</h3>
+                <p>Этот сайт посвящен созданию игр на движке RPG Maker. Здесь вы найдете полезные гайды, ресурсы и плагины для вашего будущего проекта.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Быстрые ссылки</h3>
+                <ul>
+                    <li><a href="index.html">Начало</a></li>
+                    <li><a href="plugins.html">Плагины</a></li>
+                    <li><a href="gallery.html">Галерея</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Полезные ресурсы</h3>
+                <ul>
+                    <li><a href="https://www.rpgmakerweb.com/" target="_blank">Официальный сайт</a></li>
+                    <li><a href="https://forums.rpgmakerweb.com/" target="_blank">Форум сообщества</a></li>
+                    <li><a href="https://itch.io/game-assets/tag-rpgmaker" target="_blank">Ресурсы на Itch.io</a></li>
+                </ul>
+            </div>
+            <div class="footer-section"></div> 
+        </div>
+        <div class="footer-copyright">
+            <div class="social-icons">
+                <a href="#" class="social-icon">YT</a>
+                <a href="#" class="social-icon">TT</a>
+                <a href="#" class="social-icon">TG</a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="link-confirm-modal" class="modal-overlay">
+        <div class="modal-content">
+            <h2>Подтверждение</h2>
+            <p>Хотите покинуть сайт и открыть ссылку?</p>
+            <p id="target-link-display" class="link-display">#</p>
+            <div class="modal-buttons">
+                <button id="confirm-link-btn" class="button">Да, перейти</button>
+                <button id="cancel-link-btn" class="button cancel-button">Нет, остаться</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="main.js"></script>
+    <script src="auth_logic.js"></script> </body>
+</html>

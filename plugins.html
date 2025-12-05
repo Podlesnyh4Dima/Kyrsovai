@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG Maker — Плагины</title>
+    <link rel="stylesheet" href="style.css">   
+    <link rel="stylesheet" href="plugins.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+</head>
+<body class="plugins-page"> 
+    <div class="parallax-bg"></div>
+    <header>
+    <h1 id="top">Моя RPG Maker игра</h1>
+    
+    <nav class="desktop-nav">
+        <a href="index.html">Главная</a>
+        <a href="plugins.html">Плагины</a>
+        <a href="gallery.html">Галерея</a>
+        <span id="desktop-auth-container"></span>
+    </nav>
+    
+    <div class="header-promo-cta">
+        <div class="resource-cart" tabindex="0" role="status" aria-live="polite" aria-label="Текущая сумма в корзине">
+            <div class="icon-wrap">
+                <svg width="24" height="24" viewBox="0 0 32 32" fill="currentColor"><g id="shopping_cart"><path d="M29.74 8.32A1 1 0 0 0 29 8H13a1 1 0 0 0 0 2h14.91l-.81 9.48a1.87 1.87 0 0 1-2 1.52H12.88a1.87 1.87 0 0 1-2-1.52L10 8.92v-.16L9.33 6.2A3.89 3.89 0 0 0 7 3.52L3.37 2.07a1 1 0 0 0-.74 1.86l3.62 1.45a1.89 1.89 0 0 1 1.14 1.3L8 9.16l.9 10.49a3.87 3.87 0 0 0 4 3.35h.1v2.18a3 1 0 1 0 2 0V23h8v2.18a3 1 0 1 0 2 0V23h.12a3.87 3.87 0 0 0 4-3.35L30 9.08a1 1 0 0 0-.26-.76zM14 29a1 1 0 1 1 1-1 1 1 0 0 1-1 1zm10 0a1 1 0 1 1 1-1 1 1 0 0 1-1 1z"/><path d="M15 18v-5a1 1 0 0 0-2 0v5a1 1 0 0 0 2 0zM20 18v-5a1 1 0 0 0-2 0v5a1 1 0 0 0 2 0zM25 18v-5a1 1 0 0 0-2 0v5a1 1 0 0 0 2 0z"/></g></svg>
+            </div>
+            <div class="cart-tooltip">
+                <h4>Ваша корзина:</h4>
+                <div id="cart-item-list" class="item-list"></div>
+                <p>Итоговая стоимость: <span id="cart-value-display">0 руб.</span></p>
+                <button id="clear-cart-btn" class="btn btn-fill-left full-width-btn">Очистить корзину</button> 
+            </div>
+        </div>
+    </div>
+    
+    <div class="menu-container">
+        <div class="menu-icon" aria-label="Открыть меню" role="button" tabindex="0"><span></span></div>
+        <nav class="mobile-nav" aria-label="Мобильное меню">
+            <a href="index.html">Главная</a>
+            <a href="plugins.html">Плагины</a>
+            <a href="gallery.html">Галерея</a>
+            <div id="mobile-auth-container"></div>
+        </nav>
+        <div class="overlay"></div>
+    </div>
+</header>
+
+
+    <main>
+        <div id="central-description-panel" class="description-panel">
+            <h2 id="panel-title">Название плагина</h2>
+            <p id="panel-description">Подробное описание плагина появится здесь при нажатии на элемент.</p>
+            <button id="close-panel-btn" class="button cancel-button">Закрыть</button>
+        </div>
+            
+        <div class="grid-container">
+            <div class="grid-item plugin-item" data-plugin-id="pdp-core" data-title="PDPCore" data-description="Базовый модуль, устанавливающий глобальный шрифт Old Standard TT, кастомный HUD (HP/MP/Stamina) и систему глобальных оповещений (`PDPNotify`). Также отключает правую кнопку мыши (ПКМ).">
+                <img src="images/js-plugin-icon.png" alt="Иконка плагина" class="item-image">
+                <div class="item-title">PDPCore</div>
+                <button class="btn btn-fill-left buy-button" data-cost="250">Купить (250 руб.)</button>
+            </div>
+            <div class="grid-item plugin-item" data-plugin-id="pd-pause" data-title="PDPause" data-description="Вводит кастомный экран паузы/меню с уникальным оформлением.">
+                <img src="images/js-plugin-icon.png" alt="Иконка плагина" class="item-image">
+                <div class="item-title">PDPause</div>
+                <button class="btn btn-fill-left buy-button" data-cost="300">Купить (300 руб.)</button>
+            </div>
+            <div class="grid-item plugin-item" data-plugin-id="pd-abs" data-title="PDABS" data-description="Базовая экшен-боевая система в реальном времени. Включает настройку ИИ врагов.">
+                <img src="images/js-plugin-icon.png" alt="Иконка плагина" class="item-image">
+                <div class="item-title">PDABS</div>
+                <button class="btn btn-fill-left buy-button" data-cost="500">Купить (500 руб.)</button>
+            </div>
+            <div class="grid-item plugin-item" data-plugin-id="pd-hotkey" data-title="PDPotionHotkey" data-description="Система привязки нескольких предметов к горячим клавишам.">
+                <img src="images/js-plugin-icon.png" alt="Иконка плагина" class="item-image">
+                <div class="item-title">PDPotionHotkey</div>
+                <button class="btn btn-fill-left buy-button" data-cost="100">Купить (100 руб.)</button>
+            </div>
+            <div class="grid-item plugin-item" data-plugin-id="pd-switcher" data-title="PDClassSwitcher" data-description="Позволяет быстро переключать класс главного актера по горячей клавише.">
+                <img src="images/js-plugin-icon.png" alt="Иконка плагина" class="item-image">
+                <div class="item-title">PDClassSwitcher</div>
+                <button class="btn btn-fill-left buy-button" data-cost="100">Купить (100 руб.)</button>
+            </div>
+            <div class="grid-item plugin-item" data-plugin-id="pd-skill-tree" data-title="PDSkillTree" data-description="Создает отдельную сцену визуального древа навыков с сеткой и системой зависимостей между узлами. Позволяет тратить очки навыков для изучения новых умений или увеличения параметров.">
+                <img src="images/js-plugin-icon.png" alt="Иконка плагина" class="item-image">
+                <div class="item-title">PDSkillTree</div>
+                <button class="btn btn-fill-left buy-button" data-cost="500">Купить (500 руб.)</button>
+            </div>
+            <div class="grid-item plugin-item" data-plugin-id="pd-quest" data-title="PDQuest" data-description="Продвинутая система квестов с полноценным журналом, списком задач (Objectives) и автоматической выдачей наград.">
+                <img src="images/js-plugin-icon.png" alt="Иконка плагина" class="item-image">
+                <div class="item-title">PDQuest</div>
+                <button class="btn btn-fill-left buy-button" data-cost="300">Купить (300 руб.)</button>
+            </div>
+        </div>
+
+    </main>
+
+    <footer id="contacts">
+        <div class="footer-grid">
+            <div class="footer-section">
+                <h3>О проекте</h3>
+                <p>Этот сайт посвящен созданию игр на движке RPG Maker. Здесь вы найдете полезные гайды, ресурсы и плагины для вашего будущего проекта.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Быстрые ссылки</h3>
+                <ul>
+                    <li><a href="index.html">Что такое RPG Maker?</a></li>
+                    <li><a href="plugins.html">Плагины</a></li>
+                    <li><a href="gallery.html">Галерея</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Полезные ресурсы</h3>
+                <ul>
+                    <li><a href="https://www.rpgmakerweb.com/" target="_blank">Официальный сайт</a></li>
+                    <li><a href="https://forums.rpgmakerweb.com/" target="_blank">Форум сообщества</a></li>
+                    <li><a href="https://itch.io/game-assets/tag-rpgmaker" target="_blank">Ресурсы на Itch.io</a></li>
+                </ul>
+            </div>
+            <div class="footer-section"></div> </div>
+        <div class="footer-copyright">
+            <div class="social-icons">
+                <a href="#" class="social-icon">YT</a>
+                <a href="#" class="social-icon">TT</a>
+                <a href="#" class="social-icon">TG</a>
+            </div>
+        </div>
+    </footer>
+    
+    <div id="link-confirm-modal" class="modal-overlay">
+        <div class="modal-content">
+            <h2>Подтверждение</h2>
+            <p>Хотите покинуть сайт и открыть ссылку?</p>
+            <p id="target-link-display" class="link-display">#</p>
+            <div class="modal-buttons">
+                <button id="confirm-link-btn" class="button">Да, перейти</button>
+                <button id="cancel-link-btn" class="button cancel-button">Нет, остаться</button>
+            </div>
+            <p id="link-message-area" class="message-area"></p>
+        </div>
+    </div>
+    <script src="auth_logic.js"></script> 
+    <script src="main.js"></script> 
+    <script src="plugins.js"></script> 
+</body>
+</html>

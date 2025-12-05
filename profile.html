@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG Maker — Личный кабинет</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="auth.css"> 
+    <link rel="stylesheet" href="profile.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+</head>
+<body class="login-page"> 
+    <div class="parallax-bg"></div>
+    <header>
+        <h1 id="top">Моя RPG Maker игра</h1>
+        <nav class="desktop-nav">
+            <a href="index.html">Главная</a>
+            <a href="plugins.html">Плагины</a>
+            <a href="gallery.html">Галерея</a>
+            <span id="desktop-auth-container"></span>
+        </nav>
+        
+        <div class="menu-container">
+            <div class="menu-icon"><span></span></div>
+            <nav class="mobile-nav">
+                <a href="index.html">Главная</a>
+                <a href="plugins.html">Плагины</a>
+                <a href="gallery.html">Галерея</a>
+                <div id="mobile-auth-container"></div>
+            </nav>
+            <div class="overlay"></div>
+        </div>
+    </header>
+
+    <div class="register-container">
+        <main class="login-main" style="max-width: 800px;">
+            <section id="form-demo">
+                <div class="profile-header">
+                    <div class="profile-avatar">👤</div>
+                    <h2 id="profile-username">Загрузка...</h2>
+                    <p id="profile-email">...</p>
+                    <button id="logout-btn" class="btn">Выйти из аккаунта</button>
+                </div>
+
+                <h3>Мои плагины</h3>
+                <div id="purchased-items-container" class="purchased-list">
+                    <p>У вас пока нет купленных плагинов.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="main.js"></script>
+    <script src="auth_logic.js"></script> 
+</body>
+</html>

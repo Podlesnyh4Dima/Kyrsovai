@@ -1,0 +1,55 @@
+.profile-header {
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid var(--accent-green);
+    padding-bottom: 20px;
+}
+
+.profile-avatar {
+    width: 100px;
+    height: 100px;
+    background: #222;
+    border: 2px solid var(--accent-green);
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+    color: var(--hover-green);
+}
+
+.purchased-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.purchased-item {
+    background: rgba(0,0,0,0.3);
+    border: 1px solid #444;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.purchased-item h4 { 
+    color: #fff; 
+    margin-bottom: 5px; 
+}
+
+.download-link {
+    color: var(--hover-green);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#logout-btn {
+    background: #8b0000;
+    margin-top: 20px;
+}
+
+#logout-btn:hover { 
+    background: #ff0000; 
+}

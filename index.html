@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG Maker — Моя игра</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="index.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="parallax-bg"></div>
+    <header>
+        <h1 id="top">Моя RPG Maker игра</h1>
+        
+        <nav class="desktop-nav">
+            <a href="index.html">Главная</a>
+            <a href="plugins.html">Плагины</a>
+            <a href="gallery.html">Галерея</a>
+            <span id="desktop-auth-container"></span>
+        </nav>
+        <div class="header-promo-cta">
+            <div class="resource-cart" tabindex="0" role="status" aria-live="polite" aria-label="Текущая сумма в корзине">
+                <div class="icon-wrap">
+                    <svg width="24" height="24" viewBox="0 0 32 32" fill="currentColor"><g id="shopping_cart"><path d="M29.74 8.32A1 1 0 0 0 29 8H13a1 1 0 0 0 0 2h14.91l-.81 9.48a1.87 1.87 0 0 1-2 1.52H12.88a1.87 1.87 0 0 1-2-1.52L10 8.92v-.16L9.33 6.2A3.89 3.89 0 0 0 7 3.52L3.37 2.07a1 1 0 0 0-.74 1.86l3.62 1.45a1.89 1.89 0 0 1 1.14 1.3L8 9.16l.9 10.49a3.87 3.87 0 0 0 4 3.35h.1v2.18a3 3 0 1 0 2 0V23h8v2.18a3 3 0 1 0 2 0V23h.12a3.87 3.87 0 0 0 4-3.35L30 9.08a1 1 0 0 0-.26-.76zM14 29a1 1 0 1 1 1-1 1 1 0 0 1-1 1zm10 0a1 1 0 1 1 1-1 1 1 0 0 1-1 1z"/><path d="M15 18v-5a1 1 0 0 0-2 0v5a1 1 0 0 0 2 0zM20 18v-5a1 1 0 0 0-2 0v5a1 1 0 0 0 2 0zM25 18v-5a1 1 0 0 0-2 0v5a1 1 0 0 0 2 0z"/></g></svg>
+                </div>
+                <div class="cart-tooltip">
+                    <h4>Ваша корзина:</h4>
+                    <div id="cart-item-list" class="item-list"></div>
+                    <p>Итоговая стоимость: <span id="cart-value-display">0 руб.</span></p>
+                    <button id="clear-cart-btn" class="btn btn-fill-left full-width-btn">Очистить корзину</button> 
+                </div>
+            </div>
+        </div>
+        <div class="menu-container">
+            <div class="menu-icon" aria-label="Открыть меню" role="button" tabindex="0"><span></span></div>
+            <nav class="mobile-nav" aria-label="Мобильное меню">
+                <a href="index.html">Главная</a>
+                <a href="plugins.html">Плагины</a>
+                <a href="gallery.html">Галерея</a>
+                <div id="mobile-auth-container"></div>
+            </nav>
+            <div class="overlay"></div>
+        </div>
+    </header>
+    <div class="main-layout">
+        <section id="intro" class="hero-section">
+            <h2 id="intro-heading">Погружение в Мой Мир</h2>
+            <p>Добро пожаловать в атмосферную RPG, созданную на RPG Maker — историю о тьме, космосе и выборе, который определяет судьбы целых миров.</p>
+        </section>
+        <main class="main-content">
+            <section id="main-section-1">
+                <h3>О Игре</h3>
+                <p>
+                    Вы — странник, оказавшийся в забытом уголке космоса после того, как умирающий герой отправил вас через нестабильный портал.  
+                    Местные обитатели сначала встречают вас с яростью, но вскоре понимают, что вы — единственный, кто может пройти их древние испытания и восстановить баланс между реальностями.
+                </p> 
+                <div class="combined-list-container">
+                    <div class="list-block">
+                        <h4>Особенности игры</h4>
+                        <ul>
+                            <li>Гримдарк атмосфера и густая мрачная эстетика</li>
+                            <li>Испытания, меняющиеся в зависимости от вашего выбора</li>
+                            <li>Уникальные способности героя и развитие по пути</li>
+                            <li>Глубокие диалоги и сюжетные развилки</li>
+                        </ul>
+                    </div>
+
+                    <div class="list-block">
+                        <h4>Что вас ждёт</h4>
+                        <ul>
+                            <li>Необычные цивилизации и их древние секреты</li>
+                            <li>Путешествия между разорванными измерениями</li>
+                            <li>Сражения, где важна каждая использованная способность</li>
+                            <li>Тайны прошлого, способные изменить само будущее</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="main-section-2">
+                <h3>Сюжетная Завязка</h3>
+                <p>
+                    Когда герой прибывает в неизвестный мир, его ждёт суровый разговор.  
+                    Местные сперва видят в нём угрозу — чужака, прорвавшегося через закрытый портал.  
+                    Но их ярость сменяется тяжёлым осознанием: именно вы должны пройти их древние испытания,  
+                    чтобы доказать своё право существовать в их реальности… или быть изгнанным навсегда.
+                </p>
+            </section>
+        </main>
+
+            <section id="resources">
+                <h3>Полезные материалы</h3>
+                <div class="glass-container">
+                    <div class="glass-card">
+                        <h4>Галерея персонажей</h4>
+                        <p>Спрайты, арты и дизайн ключевых героев и врагов.</p>
+                        <a href="gallery.html">Перейти</a>
+                    </div>
+
+                    <div class="glass-card">
+                        <h4>Плагины проекта</h4>
+                        <p>Список функций и систем, которые используются в игре.</p>
+                        <a href="plugins.html">Перейти</a>
+                    </div>
+
+                    <div class="glass-card">
+                        <h4>Дневник разработки</h4>
+                        <p>Ход создания уровней, механик и лора. Обновляется регулярно.</p>
+                        <a href="#">Скоро</a>
+                    </div>
+                </div>
+            </section>
+        </aside>
+    </div>
+    
+    <footer id="contacts">
+        <div class="footer-grid">
+            <div class="footer-section">
+                <h3>О проекте</h3>
+                <p>Этот сайт посвящен созданию игр на движке RPG Maker. Здесь вы найдете полезные гайды, ресурсы и плагины для вашего будущего проекта.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Быстрые ссылки</h3>
+                <ul>
+                    <li><a href="index.html">Начало</a></li>
+                    <li><a href="plugins.html">Плагины</a></li>
+                    <li><a href="gallery.html">Галерея</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Полезные ресурсы</h3>
+                <ul>
+                    <li><a href="https://www.rpgmakerweb.com/" target="_blank">Официальный сайт</a></li>
+                    <li><a href="https://forums.rpgmakerweb.com/" target="_blank">Форум сообщества</a></li>
+                    <li><a href="https://itch.io/game-assets/tag-rpgmaker" target="_blank">Ресурсы на Itch.io</a></li>
+                </ul>
+            </div>
+            <div class="footer-section"></div> 
+        </div>
+        <div class="footer-copyright">
+            <div class="social-icons">
+                <a href="#" class="social-icon">YT</a>
+                <a href="#" class="social-icon">TT</a>
+                <a href="#" class="social-icon">TG</a>
+            </div>
+        </div>
+    </footer>
+
+<script src="auth_logic.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
